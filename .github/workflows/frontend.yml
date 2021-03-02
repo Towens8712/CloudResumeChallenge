@@ -33,6 +33,7 @@ jobs:
         ls
         cd ..
         cd ..
+        ls
     - name: Uploading files to S3
       run: |
           aws s3 sync . s3://thomasowens8712resume.com --acl public-read
