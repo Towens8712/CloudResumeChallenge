@@ -31,6 +31,8 @@ jobs:
     - name: List files
       run: |
         ls
+        cd ..
+        cd ..
     - name: Uploading files to S3
       run: |
           aws s3 sync . s3://thomasowens8712resume.com --acl public-read
