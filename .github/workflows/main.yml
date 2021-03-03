@@ -53,6 +53,12 @@ jobs:
       with:
           sam_command: 'deploy --stack-name cloud-resume --no-fail-on-empty-changeset'
       env:
+<<<<<<< HEAD:github/workflows/main.yml
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1  
+=======
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+>>>>>>> 6ffdd15adbac0e2ee7f937c28c48200a56f1304d:.github/workflows/main.yml
